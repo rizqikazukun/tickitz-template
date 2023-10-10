@@ -1,0 +1,71 @@
+:root {
+  --muted-color: #aaaaaa;
+  --tic-nav-link-color: #414141;
+  --tic-branding-color: #5F2EEA;
+  --tic-branding-hover-color: #4b27af;
+  --tic-muted-color: #A0A3BD;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+
+/* components */
+
+.btn-primary {
+  background-color: var(--tic-branding-color);
+  border-color: var(--tic-branding-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--tic-branding-hover-color);
+  border-color: var(--tic-branding-hover-color);
+}
+
+/* end of components  */
+
+
+/* header */
+
+#nav-left-item a {
+  font-size: 14px;
+  font-weight: 600 !important;
+  color: var(--tic-nav-link-color);
+  text-decoration: none;
+  padding: 20px;
+}
+
+#nav-right-item {
+  color: var(--tic-branding-color);
+  text-decoration: none;
+  padding: 20px;
+}
+
+#nav-right-item button {
+  font-size: 14px;
+  font-weight: 700 !important;
+}
+
+#header-left-section {
+  margin: auto;
+} 
+
+#header-left-section h1 {
+  color: var(--tic-branding-color);
+  font-size: 56px;
+  font-weight: 700 !important;
+} 
+
+#header-left-section p {
+  color: var(--muted-color);
+  font-size: 24px;
+  font-weight: 400 !important;
+}
+
+#header-right-section {
+  margin: auto;
+} 
+
+
+/* end of header */
