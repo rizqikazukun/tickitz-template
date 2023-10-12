@@ -15,3 +15,7 @@ homepage      | index.html
 **Font Name** | link
 --------------|--------------
 Mulish        | <https://fonts.google.com/specimen/Mulish>
+
+## Issue
+
+- [ ] has not has a arrow for moving the movie scroll

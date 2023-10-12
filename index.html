@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tickitz</title>
-    <link rel="icon" type="image/svg+xml" href="assets/img/favico.svg">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favico.svg" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="./assets/style/style.css" />
   </head>
+
   <body>
     <header class="container">
       <!-- nav link -->
@@ -36,18 +37,299 @@
       </nav>
       <!-- end nav link -->
       <!-- section -->
-      <section class="d-flex justify-content-between">
-        <div id="header-left-section">
+      <section class="row text-center">
+        <div id="header-left-section" class="col-md-6 col-12 align-self-center">
           <p>Nearest Cinema, Newest Movie,</p>
           <h1>Find out now!</h1>
         </div>
-        <div id="header-right-section">
-          <img src="./assets/img/banner.png" alt="banner" />
+        <div id="header-right-section" class="col-md-6 col-12 text-center">
+          <img src="./assets/img/banner.png" alt="banner" style="width: 100%" />
         </div>
       </section>
       <!-- end of section -->
     </header>
-    
+
+    <main>
+      <section id="now-showing">
+        <div class="container">
+          <div class="d-flex justify-content-between">
+            <h2>
+              <span class="text-indicator">Now Showing<br /></span>
+            </h2>
+            <a href="#"
+              ><span
+                style="
+                  color: var(--tic-branding-color);
+                  font-size: 16px;
+                  font-weight: 700;
+                "
+                >View All</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="container movie-scroll text-center">
+          <div class="card movie-scroll-card" style="border-color: #ececec">
+            <img
+              src="./assets/img/poster/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_SX300.jpg"
+              class="movie-scroll-card-img"
+              alt="movie"
+            />
+            <div class="card-body">
+              <h5 class="card-title movie-scroll-title">Openheimer</h5>
+              <p class="card-text movie-scroll-genres">
+                History, Action, Thriller
+              </p>
+              <button type="button" class="btn btn-outline">
+                Details
+              </button>
+            </div>
+          </div>
+          <div class="card movie-scroll-card" style="border-color: #ececec">
+            <img
+              src="./assets/img/poster/MV5BMDc1NzM1OTgtOGYxMS00ZWE1LWEzZWMtNWEyOTI2NDJjOTU2XkEyXkFqcGdeQXVyNjQzNzA2NjM@._V1_SX300.jpg"
+              class="movie-scroll-card-img"
+              alt="movie"
+            />
+            <div class="card-body">
+              <h5 class="card-title movie-scroll-title">Openheimer</h5>
+              <p class="card-text movie-scroll-genres">
+                History, Action, Thriller
+              </p>
+              <button type="button" class="btn btn-outline">
+                Details
+              </button>
+            </div>
+          </div>
+          <div class="card movie-scroll-card" style="border-color: #ececec">
+            <img
+              src="./assets/img/poster/MV5BMjI1MzM2ODEyMV5BMl5BanBnXkFtZTgwNTIzODAwMzE@._V1_SX300.jpg"
+              class="movie-scroll-card-img"
+              alt="movie"
+            />
+            <div class="card-body">
+              <h5 class="card-title movie-scroll-title">Openheimer</h5>
+              <p class="card-text movie-scroll-genres">
+                History, Action, Thriller
+              </p>
+              <button type="button" class="btn btn-outline">
+                Details
+              </button>
+            </div>
+          </div>
+          <div class="card movie-scroll-card" style="border-color: #ececec">
+            <img
+              src="./assets/img/poster/MV5BMTc5MTg2NjQ4MV5BMl5BanBnXkFtZTgwNzcxOTY5NjE@._V1_SX300.jpg"
+              class="movie-scroll-card-img"
+              alt="movie"
+            />
+            <div class="card-body">
+              <h5 class="card-title movie-scroll-title">Openheimer</h5>
+              <p class="card-text movie-scroll-genres">
+                History, Action, Thriller
+              </p>
+              <button type="button" class="btn btn-outline">
+                Details
+              </button>
+            </div>
+          </div>
+          <div class="card movie-scroll-card" style="border-color: #ececec">
+            <img
+              src="./assets/img/poster/MV5BMTMwNjAxMTc0Nl5BMl5BanBnXkFtZTcwODc3ODk5Mg@@._V1_SX300.jpg"
+              class="movie-scroll-card-img"
+              alt="movie"
+            />
+            <div class="card-body">
+              <h5 class="card-title movie-scroll-title">Openheimer</h5>
+              <p class="card-text movie-scroll-genres">
+                History, Action, Thriller
+              </p>
+              <button type="button" class="btn btn-outline">
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="upcoming-movies">
+        <div class="container">
+          <div class="d-flex justify-content-between">
+            <h2>
+              <span>Upcoming Movies<br /></span>
+            </h2>
+            <a href="#"
+              ><span
+                style="
+                  color: var(--tic-branding-color);
+                  font-size: 16px;
+                  font-weight: 700;
+                "
+                >View All</span
+              ></a
+            >
+          </div>
+        </div>
+
+        <div class="container months-scroll text-center">
+          <button
+            type="button"
+            class="btn btn-outline months-scroll-item"
+          >
+            January
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline months-scroll-item"
+          >
+            February
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline months-scroll-item"
+          >
+            March
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline months-scroll-item"
+          >
+            April
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline months-scroll-item"
+          >
+            May
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline months-scroll-item"
+          >
+            June
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline months-scroll-item"
+          >
+            July
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline months-scroll-item"
+          >
+            August
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline months-scroll-item"
+          >
+            September
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline months-scroll-item"
+          >
+            October
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline months-scroll-item"
+          >
+            November
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline months-scroll-item"
+          >
+            December
+          </button>
+        </div>
+
+        <div class="container movie-scroll text-center">
+          <div class="card movie-scroll-card" style="border-color: #ececec">
+            <img
+              src="./assets/img/poster/MV5BMTQ4OTgzNTkwNF5BMl5BanBnXkFtZTgwMzI3MDE3NDE@._V1_SX300.jpg"
+              class="movie-scroll-card-img"
+              alt="movie"
+            />
+            <div class="card-body">
+              <h5 class="card-title movie-scroll-title">Openheimer</h5>
+              <p class="card-text movie-scroll-genres">
+                History, Action, Thriller
+              </p>
+              <button type="button" class="btn btn-outline">
+                Details
+              </button>
+            </div>
+          </div>
+          <div class="card movie-scroll-card" style="border-color: #ececec">
+            <img
+              src="./assets/img/poster/MV5BMTU4YmExZGItNDdkMC00MjJjLWI3MDAtNmQzMDZkMjRkZDlhXkEyXkFqcGdeQXVyODY5NzkyMjA@._V1_SX300.jpg"
+              class="movie-scroll-card-img"
+              alt="movie"
+            />
+            <div class="card-body">
+              <h5 class="card-title movie-scroll-title">Openheimer</h5>
+              <p class="card-text movie-scroll-genres">
+                History, Action, Thriller
+              </p>
+              <button type="button" class="btn btn-outline">
+                Details
+              </button>
+            </div>
+          </div>
+          <div class="card movie-scroll-card" style="border-color: #ececec">
+            <img
+              src="./assets/img/poster/MV5BNDIwYjg5YzItZTJmMC00YjJhLWFiNjYtMDU5MmQxOTQxODM2XkEyXkFqcGdeQXVyMjc2Nzg5OTQ@._V1_SX300.jpg"
+              class="movie-scroll-card-img"
+              alt="movie"
+            />
+            <div class="card-body">
+              <h5 class="card-title movie-scroll-title">Openheimer</h5>
+              <p class="card-text movie-scroll-genres">
+                History, Action, Thriller
+              </p>
+              <button type="button" class="btn btn-outline">
+                Details
+              </button>
+            </div>
+          </div>
+          <div class="card movie-scroll-card" style="border-color: #ececec">
+            <img
+              src="./assets/img/poster/MV5BNjU3N2QxNzYtMjk1NC00MTc4LTk1NTQtMmUxNTljM2I0NDA5XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
+              class="movie-scroll-card-img"
+              alt="movie"
+            />
+            <div class="card-body">
+              <h5 class="card-title movie-scroll-title">Openheimer</h5>
+              <p class="card-text movie-scroll-genres">
+                History, Action, Thriller
+              </p>
+              <button type="button" class="btn btn-outline">
+                Details
+              </button>
+            </div>
+          </div>
+          <div class="card movie-scroll-card" style="border-color: #ececec">
+            <img
+              src="./assets/img/poster/MV5BOGE1MThjNzctZWYxNy00NjYyLWJiZTItZjVjYTZhYzk5MDJkXkEyXkFqcGdeQXVyMjc2Nzg5OTQ@._V1_SX300.jpg"
+              class="movie-scroll-card-img"
+              alt="movie"
+            />
+            <div class="card-body">
+              <h5 class="card-title movie-scroll-title">Openheimer</h5>
+              <p class="card-text movie-scroll-genres">
+                History, Action, Thriller
+              </p>
+              <button type="button" class="btn btn-outline">
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
