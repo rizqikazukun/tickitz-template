@@ -10,12 +10,12 @@
 body {
   margin: 0px;
   font-family: "Mulish", sans-serif;
-  
+
   /* hide scrollbar on chromium base browser */
-  ::-webkit-scrollbar{
+  ::-webkit-scrollbar {
     display: none;
   }
-  
+
 }
 
 body a {
@@ -37,6 +37,18 @@ body a {
 .text-indicator {
   border-bottom: 3px solid var(--tic-branding-color);
   padding-bottom: 5px;
+}
+
+.canvasItem {
+  padding: 2vh;
+  font-size: 2vh;
+}
+
+.canvasItem:hover {
+  padding: 2vh;
+  color: white;
+  background-color: var(--tic-branding-hover-color);
+  border-radius: 5px;
 }
 
 /* end of general components  */
@@ -136,7 +148,6 @@ body a {
 #nav-right-item {
   color: var(--tic-branding-color);
   text-decoration: none;
-  padding: 20px;
 }
 
 #nav-right-item button {
@@ -161,6 +172,7 @@ body a {
 }
 
 #header-right-section {
+  /* keep it because i want it */
   margin: 0px 0px 0px 0px;
 }
 
@@ -195,3 +207,32 @@ body a {
 }
 
 /* end of upcoming movies section */
+
+/* mobile rules */
+/* width reference get from bootstrap lg break point */
+
+.desktop-hide {
+  display: none;
+}
+
+@media (max-width: 992px) {
+
+  .desktop-hide {
+    display: unset;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+}
+
+
+/* end of mobile rules */
+/* svg icons color */
+
+.svg-color-tickitz-branding {
+  filter: invert(19%) sepia(71%) saturate(7000%) hue-rotate(256deg) brightness(94%) contrast(94%);
+}
+
+/* end of svg icon color */
