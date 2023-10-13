@@ -26,6 +26,12 @@ body a {
 
 /* general components */
 
+#input-email {
+  color: white;
+  background-image: var(--tic-branding-gradient);
+  border: unset;
+}
+
 #signup-button {
   color: white;
   background-image: var(--tic-branding-gradient);
@@ -236,6 +242,27 @@ nav {
 }
 
 /* end of upcoming movies section */
+
+/* subcription section */
+
+#subscription h1 {
+  background-clip: text;
+  font-size: 48px;
+  font-weight: 700 !important;
+  background: var(--tic-branding-color);
+  background: var(--tic-branding-gradient);
+  /* i thing it's will broke in some devices */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#subscription p {
+  color: var(--tic-muted-color);
+  font-size: 24px;
+  font-weight: 400 !important;
+}
+
+/* end ofsubcription section */
 
 /* mobile rules */
 /* width reference get from bootstrap lg break point */
