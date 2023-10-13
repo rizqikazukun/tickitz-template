@@ -1,12 +1,13 @@
 :root {
-  --tic-nav-link-color: #414141;
   --tic-branding-color: #5f2eea;
+  --tic-branding-color-middle: #7b0ed4c9;
   --tic-branding-hover-color: #4b27af;
   --tic-branding-gradient: linear-gradient(120deg, #4b19db, #d000cc);
   --tic-branding-gradient-hover: linear-gradient(120deg, #2d00b6, #aa00a7);
-  --tic-muted-color: #a0a3bd;
-  --tic-section-color: #f5f6f8;
+  --tic-color-muted: #a0a3bd;
+  --tic-color-section: #f5f6f8;
   --tic-color-black: #14142b;
+  --tic-color-nav: #414141;
 }
 
 body {
@@ -17,7 +18,6 @@ body {
   ::-webkit-scrollbar {
     display: none;
   }
-
 }
 
 body a {
@@ -30,6 +30,20 @@ body a {
   color: white;
   background-image: var(--tic-branding-gradient);
   border: unset;
+}
+
+#signin-button {
+  color: var(--tic-branding-color-middle);
+  border-color: var(--tic-branding-color-middle);
+  /* i thing it's will broke in some devices */
+  margin-right: 5px;
+
+}
+
+#signin-button:hover {
+  color: white;
+  background-color: var(--tic-branding-color-middle);
+  
 }
 
 #signup-button {
@@ -45,7 +59,7 @@ body a {
 
 .text-indicator {
   padding-bottom: 7px;
-  border-bottom: 3px solid var(--tic-branding-color);
+  border-bottom: 3px solid var(--tic-branding-color-middle);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
@@ -65,7 +79,7 @@ body a {
 }
 
 #offcanvasTop {
-  height: fit-content; 
+  height: fit-content;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -93,28 +107,28 @@ body a {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
-  transition: .5s;
+  transition: 0.5s;
   gap: 20px;
 }
 
 .months-scroll-item {
   flex-grow: 1;
   min-width: 125px;
-  color: var(--tic-branding-color);
+  color: var(--tic-branding-color-middle);
   background-color: transparent;
-  border-color: var(--tic-branding-color);
+  border-color: var(--tic-branding-color-middle);
 }
 
 .months-scroll-item:hover {
   color: #ffffff;
-  background-color: var(--tic-branding-color);
-  border-color: var(--tic-branding-color);
+  background-color: var(--tic-branding-color-middle);
+  border-color: var(--tic-branding-color-middle);
 }
 
 .months-scroll-item:active {
   color: #ffffff;
-  background-color: var(--tic-branding-color);
-  border-color: var(--tic-branding-color);
+  background-color: var(--tic-branding-color-middle);
+  border-color: var(--tic-branding-color-middle);
 }
 
 /* end of months scroll component */
@@ -126,7 +140,7 @@ body a {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
-  transition: .5s;
+  transition: 0.5s;
   gap: 20px;
 }
 
@@ -139,15 +153,15 @@ body a {
 
 .movie-scroll-card button {
   width: 100%;
-  color: var(--tic-branding-color);
-  border-color: var(--tic-branding-color);
+  color: var(--tic-branding-color-middle);
+  border-color: var(--tic-branding-color-middle);
 }
 
 .movie-scroll-card button:hover {
   width: 100%;
   color: white;
-  background-color: var(--tic-branding-color);
-  border-color: var(--tic-branding-color);
+  background-color: var(--tic-branding-color-middle);
+  border-color: var(--tic-branding-color-middle);
 }
 
 .movie-scroll-card-img {
@@ -165,7 +179,7 @@ body a {
 .movie-scroll-genres {
   font-size: 12px;
   font-weight: 400;
-  color: var(--tic-muted-color);
+  color: var(--tic-color-muted);
 }
 
 /* end of movie scroll component */
@@ -179,13 +193,13 @@ nav {
 #nav-left-item a {
   font-size: 14px;
   font-weight: 600 !important;
-  color: var(--tic-nav-link-color);
+  color: var(--tic-color-nav);
   padding-left: 2.5vh;
   padding-right: 2.5vh;
 }
 
 #nav-right-item {
-  color: var(--tic-branding-color);
+  color: var(--tic-branding-color-middle);
   text-decoration: none;
 }
 
@@ -198,7 +212,7 @@ nav {
   background-clip: text;
   font-size: 56px;
   font-weight: 700 !important;
-  background: var(--tic-branding-color);
+  background: var(--tic-branding-color-middle);
   background: var(--tic-branding-gradient);
   /* i thing it's will broke in some devices */
   -webkit-background-clip: text;
@@ -206,7 +220,7 @@ nav {
 }
 
 #header-left-section p {
-  color: var(--tic-muted-color);
+  color: var(--tic-color-muted);
   font-size: 24px;
   font-weight: 400 !important;
 }
@@ -217,13 +231,13 @@ nav {
 
 #now-showing {
   padding: 50px 20px 30px 20px;
-  background-color: var(--tic-section-color);
+  background-color: var(--tic-color-section);
 }
 
 #now-showing h2 {
   font-size: 24px;
   font-weight: 700;
-  color: var(--tic-branding-color);
+  color: var(--tic-branding-color-middle);
 }
 
 /* end now showing section */
@@ -238,7 +252,7 @@ nav {
 #upcoming-movies h2 {
   font-size: 24px;
   font-weight: 700;
-  color: var(--tic-branding-color);
+  color: var(--tic-branding-color-middle);
 }
 
 /* end of upcoming movies section */
@@ -249,7 +263,7 @@ nav {
   background-clip: text;
   font-size: 48px;
   font-weight: 700 !important;
-  background: var(--tic-branding-color);
+  background: var(--tic-branding-color-middle);
   background: var(--tic-branding-gradient);
   /* i thing it's will broke in some devices */
   -webkit-background-clip: text;
@@ -257,7 +271,7 @@ nav {
 }
 
 #subscription p {
-  color: var(--tic-muted-color);
+  color: var(--tic-color-muted);
   font-size: 24px;
   font-weight: 400 !important;
 }
@@ -272,7 +286,6 @@ nav {
 }
 
 @media (max-width: 992px) {
-
   .desktop-hide {
     display: unset;
   }
@@ -280,16 +293,15 @@ nav {
   .mobile-hide {
     display: none;
   }
-
 }
-
 
 /* end of mobile rules */
 /* svg icons color */
 
 .svg-color-tickitz-branding {
   opacity: 100%;
-  filter: invert(23%) sepia(86%) saturate(5665%) hue-rotate(276deg) brightness(81%) contrast(114%);
+  filter: invert(23%) sepia(86%) saturate(5665%) hue-rotate(276deg)
+    brightness(81%) contrast(114%);
 }
 
 /* end of svg icon color */
