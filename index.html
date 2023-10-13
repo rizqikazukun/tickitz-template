@@ -12,7 +12,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/style/style.css" />
-
 </head>
 
 <body>
@@ -30,28 +29,27 @@
           Sign Up
         </button>
 
-        <button class="desktop-hide btn btn-outline" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasTop">
+        <button class="desktop-hide btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop">
           <img class="svg-color-tickitz-branding" src="./assets/img/Hamburger_icon.svg" alt="menu" height="54px">
         </button>
 
       </div>
     </nav>
+    <!-- end nav link -->
 
-    <!-- Bootstrap Canvas  -->
+    <!-- Bootstrap Canvas -->
     <div class="offcanvas offcanvas-top text-center" tabindex="-1" id="offcanvasTop">
       <div class="offcanvas-body">
-        <button class="btn btn-outline dropdown-item canvasItem">Home</button>
-        <button class="btn btn-outline dropdown-item canvasItem">List Movie</button>
-        <button class="btn btn-outline dropdown-item canvasItem">Login</button>
-        <button class="btn btn-outline dropdown-item canvasItem">Register</button>
-        <button class="btn btn-outline dropdown-item canvasItem" data-bs-dismiss="offcanvas">Close</button>
+        <button class="btn dropdown-item canvasItem">Home</button>
+        <button class="btn dropdown-item canvasItem">List Movie</button>
+        <button class="btn dropdown-item canvasItem">Login</button>
+        <button class="btn dropdown-item canvasItem">Register</button>
+        <button class="btn dropdown-item canvasItem" data-bs-dismiss="offcanvas">Close</button>
       </div>
     </div>
-    <!-- end of Bootstrap Canvas  -->
+    <!-- end of Bootstrap Canvas -->
 
 
-    <!-- end nav link -->
     <!-- section -->
     <section class="row text-center">
       <div id="header-left-section" class="col-md-6 col-12 align-self-center">
@@ -66,6 +64,7 @@
   </header>
 
   <main>
+    <!-- now showing section -->
     <section id="now-showing">
       <div class="container">
         <div class="d-flex justify-content-between">
@@ -73,10 +72,10 @@
             <span class="text-indicator">Now Showing</span>
           </h2>
           <a href="#"><span style="
-                  color: var(--tic-branding-color);
-                  font-size: 16px;
-                  font-weight: 700;
-                ">View All</span></a>
+         color: var(--tic-branding-color);
+         font-size: 16px;
+         font-weight: 700;
+        ">View All</span></a>
         </div>
       </div>
       <div id="now-showing-movie-scroll" class="container movie-scroll text-center">
@@ -89,7 +88,7 @@
             <p class="card-text movie-scroll-genres">
               History, Action, Thriller
             </p>
-            <button type="button" class="btn btn-outline">
+            <button type="button" class="btn ">
               Details
             </button>
           </div>
@@ -103,7 +102,7 @@
             <p class="card-text movie-scroll-genres">
               Science fiction, Adventure, Family
             </p>
-            <button type="button" class="btn btn-outline">
+            <button type="button" class="btn ">
               Details
             </button>
           </div>
@@ -116,7 +115,7 @@
             <p class="card-text movie-scroll-genres">
               Action, Adventure
             </p>
-            <button type="button" class="btn btn-outline">
+            <button type="button" class="btn ">
               Details
             </button>
           </div>
@@ -129,7 +128,7 @@
             <p class="card-text movie-scroll-genres">
               Animation, Science Fiction, Kids
             </p>
-            <button type="button" class="btn btn-outline">
+            <button type="button" class="btn ">
               Details
             </button>
           </div>
@@ -142,14 +141,16 @@
             <p class="card-text movie-scroll-genres">
               Animation, Fiction, Kids
             </p>
-            <button type="button" class="btn btn-outline">
+            <button type="button" class="btn ">
               Details
             </button>
           </div>
         </div>
       </div>
     </section>
+    <!-- end of now showing section -->
 
+    <!-- upcoming movies section -->
     <section id="upcoming-movies">
       <div class="container">
         <div class="d-flex justify-content-between">
@@ -157,50 +158,26 @@
             <span>Upcoming Movies<br /></span>
           </h2>
           <a href="#"><span style="
-                  color: var(--tic-branding-color);
-                  font-size: 16px;
-                  font-weight: 700;
-                ">View All</span></a>
+         color: var(--tic-branding-color);
+         font-size: 16px;
+         font-weight: 700;
+        ">View All</span></a>
         </div>
       </div>
 
       <div id="months-scroll" class="container months-scroll text-center">
-        <button type="button" class="btn btn-outline months-scroll-item">
-          January
-        </button>
-        <button type="button" class="btn btn-outline months-scroll-item">
-          February
-        </button>
-        <button type="button" class="btn btn-outline months-scroll-item">
-          March
-        </button>
-        <button type="button" class="btn btn-outline months-scroll-item">
-          April
-        </button>
-        <button type="button" class="btn btn-outline months-scroll-item">
-          May
-        </button>
-        <button type="button" class="btn btn-outline months-scroll-item">
-          June
-        </button>
-        <button type="button" class="btn btn-outline months-scroll-item">
-          July
-        </button>
-        <button type="button" class="btn btn-outline months-scroll-item">
-          August
-        </button>
-        <button type="button" class="btn btn-outline months-scroll-item">
-          September
-        </button>
-        <button type="button" class="btn btn-outline months-scroll-item">
-          October
-        </button>
-        <button type="button" class="btn btn-outline months-scroll-item">
-          November
-        </button>
-        <button type="button" class="btn btn-outline months-scroll-item">
-          December
-        </button>
+        <button type="button" class="btn months-scroll-item">January</button>
+        <button type="button" class="btn months-scroll-item">February</button>
+        <button type="button" class="btn months-scroll-item">March</button>
+        <button type="button" class="btn months-scroll-item">April</button>
+        <button type="button" class="btn months-scroll-item">May</button>
+        <button type="button" class="btn months-scroll-item">June</button>
+        <button type="button" class="btn months-scroll-item">July</button>
+        <button type="button" class="btn months-scroll-item">August</button>
+        <button type="button" class="btn months-scroll-item">September</button>
+        <button type="button" class="btn months-scroll-item">October</button>
+        <button type="button" class="btn months-scroll-item">November</button>
+        <button type="button" class="btn months-scroll-item">December</button>
       </div>
 
       <div id="upcoming-movies-scroll" class="container movie-scroll text-center">
@@ -212,7 +189,7 @@
             <p class="card-text movie-scroll-genres">
               Adventure, Science fiction, Family
             </p>
-            <button type="button" class="btn btn-outline">
+            <button type="button" class="btn ">
               Details
             </button>
           </div>
@@ -226,7 +203,7 @@
             <p class="card-text movie-scroll-genres">
               Zombie, Horror, Thriller
             </p>
-            <button type="button" class="btn btn-outline">
+            <button type="button" class="btn ">
               Details
             </button>
           </div>
@@ -240,7 +217,7 @@
             <p class="card-text movie-scroll-genres">
               Anime, Ninja, Teens
             </p>
-            <button type="button" class="btn btn-outline">
+            <button type="button" class="btn ">
               Details
             </button>
           </div>
@@ -254,7 +231,7 @@
             <p class="card-text movie-scroll-genres">
               Live Action, Drama
             </p>
-            <button type="button" class="btn btn-outline">
+            <button type="button" class="btn ">
               Details
             </button>
           </div>
@@ -268,17 +245,19 @@
             <p class="card-text movie-scroll-genres">
               Romance, Drama, Live Action
             </p>
-            <button type="button" class="btn btn-outline">
+            <button type="button" class="btn ">
               Details
             </button>
           </div>
         </div>
       </div>
     </section>
+    <!-- end of upcoming movies section -->
 
+    <!-- subscription movies section -->
     <section id="subscription">
       <div class="container shadow p-3 mb-5 bg-body-white rounded text-center">
-        
+
         <p>Be the vanguard of the</p>
         <h1>Moviegoers</h1>
 
@@ -293,9 +272,10 @@
           By joining you as a Tickitz member,<br>
           we will always send you the latest updates via email.
         </p>
-      
+
       </div>
     </section>
+    <!-- end of subscription movies section -->
 
   </main>
 
@@ -303,6 +283,7 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
+  <!-- currsor as touch script -->
   <script>
     // const movies = document.getElementsByClassName('movie-scroll')
     // console.log(movies)
@@ -373,6 +354,8 @@
 
 
   </script>
+  <!-- end of currsor as touch script -->
+
 </body>
 
 </html>
