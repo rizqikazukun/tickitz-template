@@ -2,7 +2,9 @@
 
 Build Using HTML + CSS  
 Author: Rizqi Pratama  
-Bootstrap Version : 5.3.2
+Bootstrap Version : 5.3.2  
+  
+Demo: <https://rizqikazukun.github.io/tickitz-template/>
 
 ## Page include  
 

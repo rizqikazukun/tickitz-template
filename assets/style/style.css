@@ -2,6 +2,8 @@
   --tic-nav-link-color: #414141;
   --tic-branding-color: #5f2eea;
   --tic-branding-hover-color: #4b27af;
+  --tic-branding-gradient: linear-gradient(120deg, #4b19db, #d000cc);
+  --tic-branding-gradient-hover: linear-gradient(120deg, #2d00b6, #aa00a7);
   --tic-muted-color: #a0a3bd;
   --tic-section-color: #f5f6f8;
   --tic-color-black: #14142b;
@@ -24,31 +26,56 @@ body a {
 
 /* general components */
 
-.btn-primary {
-  background-color: var(--tic-branding-color);
-  border-color: var(--tic-branding-color);
+#signup-button {
+  color: white;
+  background-image: var(--tic-branding-gradient);
+  border: unset;
 }
 
-.btn-primary:hover {
-  background-color: var(--tic-branding-hover-color);
-  border-color: var(--tic-branding-hover-color);
+#signup-button:hover {
+  background-image: var(--tic-branding-gradient-hover);
+  border: unset;
 }
 
 .text-indicator {
+  padding-bottom: 7px;
   border-bottom: 3px solid var(--tic-branding-color);
-  padding-bottom: 5px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 .canvasItem {
   padding: 2vh;
   font-size: 2vh;
+  font-weight: 700;
 }
 
 .canvasItem:hover {
   padding: 2vh;
+  font-weight: 700;
   color: white;
-  background-color: var(--tic-branding-hover-color);
+  background-image: var(--tic-branding-gradient);
   border-radius: 5px;
+}
+
+#offcanvasTop {
+  height: fit-content; 
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.offcanvas-body {
+  margin-top: 2vh;
+}
+
+.offcanvas-backdrop.show {
+  opacity: unset;
+  background: unset;
+}
+
+.offcanvas-backdrop {
+  opacity: 100%;
+  backdrop-filter: blur(10px) brightness(0.5);
 }
 
 /* end of general components  */
@@ -60,6 +87,7 @@ body a {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
+  transition: .5s;
   gap: 20px;
 }
 
@@ -92,6 +120,7 @@ body a {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
+  transition: .5s;
   gap: 20px;
 }
 
@@ -137,12 +166,16 @@ body a {
 
 /* header */
 
+nav {
+  align-items: center;
+}
+
 #nav-left-item a {
   font-size: 14px;
   font-weight: 600 !important;
   color: var(--tic-nav-link-color);
-  text-decoration: none;
-  padding: 20px;
+  padding-left: 2.5vh;
+  padding-right: 2.5vh;
 }
 
 #nav-right-item {
@@ -156,24 +189,20 @@ body a {
 }
 
 #header-left-section h1 {
-  color: var(--tic-branding-color);
+  background-clip: text;
   font-size: 56px;
   font-weight: 700 !important;
+  background: var(--tic-branding-color);
+  background: var(--tic-branding-gradient);
+  /* i thing it's will broke in some devices */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #header-left-section p {
   color: var(--tic-muted-color);
   font-size: 24px;
   font-weight: 400 !important;
-}
-
-#header-left-section {
-  margin: 20px 0px 20px 0px;
-}
-
-#header-right-section {
-  /* keep it because i want it */
-  margin: 0px 0px 0px 0px;
 }
 
 /* end of header */
@@ -232,7 +261,8 @@ body a {
 /* svg icons color */
 
 .svg-color-tickitz-branding {
-  filter: invert(19%) sepia(71%) saturate(7000%) hue-rotate(256deg) brightness(94%) contrast(94%);
+  opacity: 100%;
+  filter: invert(23%) sepia(86%) saturate(5665%) hue-rotate(276deg) brightness(81%) contrast(114%);
 }
 
 /* end of svg icon color */
