@@ -4,9 +4,10 @@
   --tic-branding-hover-color: #4b27af;
   --tic-branding-gradient: linear-gradient(120deg, #4b19db, #d000cc);
   --tic-branding-gradient-hover: linear-gradient(120deg, #2d00b6, #aa00a7);
-  --tic-color-muted: #a0a3bd;
+  --tic-color-muted: #6E7191;
   --tic-color-section: #f5f6f8;
   --tic-color-black: #14142b;
+  --tic-color-black-absolute: #000;
   --tic-color-nav: #414141;
 }
 
@@ -18,6 +19,12 @@ body {
   ::-webkit-scrollbar {
     display: none;
   }
+
+  /* IE 11 */
+  -ms-overflow-style: none;
+
+  /* Firefox 64 */ 
+  scrollbar-width: none; 
 }
 
 body a {
@@ -99,6 +106,16 @@ body a {
 }
 
 /* end of general components  */
+
+/* svg icons color */
+
+.svg-color-tickitz-branding {
+  opacity: 100%;
+  filter: invert(23%) sepia(86%) saturate(5665%) hue-rotate(276deg)
+    brightness(81%) contrast(114%);
+}
+
+/* end of svg icon color */
 
 /* months scroll component */
 
@@ -259,7 +276,7 @@ nav {
 
 /* subcription section */
 
-#subscription h1 {
+#call-to-action h1 {
   background-clip: text;
   font-size: 48px;
   font-weight: 700 !important;
@@ -270,7 +287,7 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
-#subscription p {
+#call-to-action p {
   color: var(--tic-color-muted);
   font-size: 24px;
   font-weight: 400 !important;
@@ -278,19 +295,35 @@ nav {
 
 /* end ofsubcription section */
 
+/* footer */
+
+.footer-item-title {
+  font-size: 16; 
+  font-weight: 700; 
+  color: var(--tic-color-black-absolute);
+}
+
+.footer-item-content {
+  font-size: 16; 
+  font-weight: 400; 
+  color: var(--tic-color-muted);
+}
+
+/* end of footer */
+
 /* mobile rules */
 /* width reference get from bootstrap lg break point */
 
-.desktop-hide {
+.mobile-component {
   display: none;
 }
 
 @media (max-width: 992px) {
-  .desktop-hide {
+  .mobile-component {
     display: unset;
   }
 
-  .mobile-hide {
+  .desktop-component {
     display: none;
   }
 
@@ -302,16 +335,10 @@ nav {
     margin-bottom: 2vh;
   }
 
+  footer {
+    text-align: center;
+  }
+
 }
 
 /* end of mobile rules */
-
-/* svg icons color */
-
-.svg-color-tickitz-branding {
-  opacity: 100%;
-  filter: invert(23%) sepia(86%) saturate(5665%) hue-rotate(276deg)
-    brightness(81%) contrast(114%);
-}
-
-/* end of svg icon color */

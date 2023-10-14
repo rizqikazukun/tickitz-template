@@ -20,18 +20,18 @@
     <nav class="d-flex justify-content-between my-5">
       <div id="nav-left-item" class="gap-4">
         <a href=""><img src="./assets/img/logo.svg" alt="logo" height="64px" /></a>
-        <a class="mobile-hide" href="#">Home</a>
-        <a class="mobile-hide" href="#">List Movie</a>
+        <a class="desktop-component" href="#">Home</a>
+        <a class="desktop-component" href="#">List Movie</a>
       </div>
       <div id="nav-right-item">
-        <button id="signin-button" type="button" class="mobile-hide btn" style="width: 120px;">
+        <button id="signin-button" type="button" class="desktop-component btn" style="width: 120px;">
           Login
         </button>
-        <button id="signup-button" type="button" class="mobile-hide btn" style="width: 120px;">
+        <button id="signup-button" type="button" class="desktop-component btn" style="width: 120px;">
           Register
         </button>
         <!-- Burger Icon -->
-        <button class="desktop-hide btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop">
+        <button class="mobile-component btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop">
           <img class="svg-color-tickitz-branding" src="./assets/img/icons/Hamburger_icon.svg" alt="menu" height="54px">
         </button>
       </div>
@@ -254,8 +254,8 @@
     </section>
     <!-- end of upcoming movies section -->
 
-    <!-- subscription movies section -->
-    <section id="subscription">
+    <!-- call-to-action movies section -->
+    <section id="call-to-action">
       <div class="container shadow p-3 mb-5 bg-body-white rounded text-center">
 
         <p style="margin-bottom: -5px;">Be the vanguard of the</p>
@@ -275,11 +275,56 @@
 
       </div>
     </section>
-    <!-- end of subscription movies section -->
+    <!-- end of call-to-action movies section -->
 
-    <footer>
+    <footer class="container mt-5">
+      <div class="row m-auto">
+        <div class="col-md-4 col-xs-12 p-4">
+          <img src="./assets/img/logo.svg" alt="logo" style="width: 60%;">
+          <p>
+            <span class="footer-item-content">
+              Stop waiting in line. Buy tickets conveniently, watch movies quietly.
+            </span>
+          </p>
+        </div>
+        <div class="col-md-2 col-xs-12 p-3">
+          <p><span class="footer-item-title">Explore</span></p>
+          <p><a href="#"><span class="footer-item-content">Home</span></a></p>
+          <p><a href="#"><span class="footer-item-content">Movie List</span></a></p>
+        </div>
+        <div class="col-md-3 col-xs-12 p-3">
+          <p><span class="footer-item-title">Our Sponsors</span></p>
+          <p>
+            <img class="m-2" src="./assets/img/cinemas/ebv.id 2.svg" alt="logo">
+          </p>
+          <p>
+            <img class="m-2" src="./assets/img/cinemas/CineOne21 2.svg" alt="logo">
+          </p>
+          <p>
+            <img class="m-2" src="./assets/img/cinemas/hiflix 2.svg" alt="logo">
+          </p>
+        </div>
+        <div class="col-md-3 col-xs-12 p-3">
+          <p><span class="footer-item-title">Follow Us</span></p>
+          <p>
+            <img class="m-2" src="./assets/img/icons/facebook.svg" alt="logo">
+            <span class="footer-item-content">Tickitz Cinema id</span>
+          </p>
+          <p>
+            <img class="m-2" src="./assets/img/icons/bx_bxl-instagram.svg" alt="logo">
+            <span class="footer-item-content">tickitz.id</span>
+          </p>
+          <p>
+            <img class="m-2" src="./assets/img/icons/twitter.svg" alt="logo">
+            <span class="footer-item-content">tickitz.id</span>
+          </p>
+          <p>
+            <img class="m-2" src="./assets/img/icons/youtube.svg" alt="logo">
+            <span class="footer-item-content">Tickitz Cinema id</span>
+          </p>
 
-
+        </div>
+      </div>
     </footer>
 
   </main>
