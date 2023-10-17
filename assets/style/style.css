@@ -33,6 +33,12 @@ body a {
 
 /* general components */
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 #input-email {
   color: white;
   background-image: var(--tic-branding-gradient);
@@ -182,8 +188,10 @@ body a {
 }
 
 .movie-scroll-card-img {
-  text-align: center;
   width: 100%;
+  object-fit: cover;
+  object-position: top;
+  text-align: center;
   border-radius: 5px;
 }
 
