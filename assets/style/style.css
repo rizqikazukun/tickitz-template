@@ -274,7 +274,7 @@ nav {
 
 /* end of upcoming movies section */
 
-/* subcription section */
+/* call-to-action section */
 
 #call-to-action h1 {
   background-clip: text;
@@ -293,7 +293,14 @@ nav {
   font-weight: 400 !important;
 }
 
-/* end ofsubcription section */
+.subcription-email-input {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* end call-to-action section */
 
 /* footer */
 
